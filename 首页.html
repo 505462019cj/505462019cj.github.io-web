@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./lib/font_4083442_zxyrbwbz4q/iconfont.css">
+    <link rel="stylesheet" href="./css/creatExamination.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/background-1.css">
+    <!-- 修改 -->
+    <link rel="stylesheet" href="./css/首页.css">
+    <!-- 结束 -->
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            /* 根据需要调整容器宽度 */
+        }
+
+        .image-frame {
+            width: 24%;
+            /* 每张图片占据父容器宽度的24%，四张图片共占96%，留出一定的空间 */
+            margin: 0 0.5%;
+            display: flex;
+            float: left;
+            /* 可以根据需要调整外边距 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* 图片框阴影，可根据喜好调整 */
+            transition: transform 0.3s ease;
+            /* 平滑过渡效果 */
+        }
+
+        .image-frame:hover {
+            transform: scale(1.05);
+            /* 鼠标悬停时图片放大效果 */
+        }
+
+        /* 确保图片响应式，宽度自动调整 */
+    </style>
+</head>
+
+<body>
+    <div class="whole">
+        <!-- 左边导航区域 -->
+        <div class="nav-left">
+            <div class="nav-logo-top">
+                <img src="./images/logo.jpg" alt="" class="logo">
+                <p class="name">裂纹识别</p>
+            </div>
+            <ul class="nav-list">
+
+                <li><a href="首页.html" class="current"><i class="iconfont icon-home"></i>首页</a></li>
+                <li><a href="./数据集.html"><i class="iconfont icon-file"></i>数据集</a></li>
+                <li><a href="./图像切割.html"><i class="iconfont icon-notification"></i>图像切割</a></li>
+                <li><a href="./裂纹检测.html"><i class="iconfont icon-history"></i>裂纹检测</a></li>
+                <li><a href="./裂纹分类.html"><i class="iconfont icon-setting"></i>裂纹分类</a></li>
+                <li><a href="./关于我们.html"><i class="iconfont icon-favorite-filling"></i>关于我们</a></li>
+
+
+
+            </ul>
+            <div class="nav-bottom">
+                <img src="./images/logo.jpg" alt="">
+                <span class="name">设置</span>
+                <span class="more1">
+                    <i class="iconfont icon-arrow-up-filling" id="arrow"></i>
+                    <ul class="address-list">
+                         <a href="login.html"><li>退出账户</li></a>
+                         <a href=""><li>刷新系统</li></a>
+                    </ul>
+                </span>
+
+            </div>
+        </div>
+        <!-- 右边部分 -->
+        <div class="nav-right">
+            <div class="header">
+                <span>
+                    <i class="iconfont icon-menu"></i>
+                    <span> 首页</span></span>
+                <p></p>
+                </span>
+            </div>
+            <div class="j_title">
+                <div class="j_title_box">
+                    <h2 class="title"><i class="iconfont icon-favorite-filling"></i>背景介绍</h2>
+                    <div class="info">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- banner -->
+        <div class="all_container">
+            <div id="banner_box"> </div>
+            <!-- 中间图片 -->
+            <div class="middle">
+                <div id="middle_image" class="middle"></div>
+                <div id="text" class="middle">
+                    <div class="middle_image_p_container">
+                        <h3>项目背景与目标</h3>
+                        <p class="middle_image_p">
+                            随着城市化进程的加速和交通流量的不断增长，道路裂纹问题日益凸显，
+                            对道路安全、行车舒适度及城市形象都带来了极大的影响。本项目旨在
+                            通过智能化手段提高道路裂纹检测和分类的准确性和效率，为道路养护和
+                            交通管理提供有力支持。
+                        </p>
+                        <h3>作品应用场景</h3>
+                        <p class="middle_image_p">
+                            1.道路维护管理: <br>
+                            自动识别和分类路面裂纹，快速发现病害，提高检测效率;
+                            对裂纹的类型、长度、宽度等参数进行分析，评估病害的严重程度和发展趋势;
+                            根据裂纹信息，为道路维护部门提供科学的维修方案和预算分配建议。 <br>
+                            2.城市规划与道路设计： <br>
+                            城市规划者和道路设计师可以利用道路裂纹分类应用程序收集和分析裂纹数据，了解不同路段和
+                            区域的裂纹分布情况。这些数据可以为未来的城市规划和道路设计提供重要参考，优化道路结构和
+                            材料选择，提高道路的耐久性和安全性。<br>
+                            3.道路养护与维修: <br>
+                            裂纹分类应用程序可以帮助道路养护部门快速识别裂纹类型，并根据裂纹类型和严重程度制定养护和修复计
+                            划。通过定期的裂纹检测和分类，养护部门能够更高效地管理道路网络，预防裂纹扩大和避免更严重的损坏。
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <!-- 应用案例 -->
+            <div id="application_box">
+                <img src="./images/application_case1.jpg" alt="" class="image-frame">
+                <img src="./images/application_case2.jpg" alt="" class="image-frame">
+                <img src="./images/application_case3.jpg" alt="" class="image-frame">
+                <img src="./images/application_case4.jpg" alt="" class="image-frame">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/general.js"></script>
+    <script src="./js/creatExamination.js"></script>
+
+</html>

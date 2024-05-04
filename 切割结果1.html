@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./lib/font_4083442_zxyrbwbz4q/iconfont.css">
+    <link rel="stylesheet" href="./css/notification.css">
+    <link rel="stylesheet" href="./css/图像切割.css">
+    <link rel="stylesheet" href="css/切割过程.css">
+    <link rel="stylesheet" href="css/数据集.css">
+    <style>
+        .box {
+            width: 1300px;
+            height: 400px;
+            margin-top: 300px;
+            margin-left: 50px;
+            background-color: #2b92d4;
+            background-size: cover;
+            background-image: url("images/原图1\ 5×5.png");
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+            animation: breathe 10s ease-in-out 1 normal;
+        }
+
+        @keyframes breathe {
+            0% {
+                opacity: 0;
+                background-size: contain;
+                background-image: url("images/原图1\ 25.png");
+                box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1)
+            }
+
+            25% {
+                opacity: 0.25;
+                background-size: contain;
+                background-image: url("images/原图1\ 25_01.png");
+                box-shadow: 0 1px 2px rgba(18, 190, 84, 0.76)
+            }
+
+            50% {
+                opacity: 0.5;
+
+                background-image: url("images/原图1\ 5×5.png");
+                box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1)
+            }
+
+            75% {
+                opacity: 0.75;
+                background-size: cover;
+                background-image: url("images/原图1\ 5×5.png");
+                box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1)
+            }
+
+            100% {
+                opacity: 1;
+                background-size: cover;
+                background-image: url("images/原图1\ 5×5.png");
+                box-shadow: 0 1px 2px rgba(18, 190, 84, 0.76)
+            }
+        }
+
+        .box_1 {
+            width: 500px;
+            height: 400px;
+            margin-top: 300px;
+            margin-left: 500px;
+            background-color: black;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+            animation: breathe_1 10s ease-in-out 1 normal;
+        }
+
+        @keyframes breathe_1 {
+            0% {
+                opacity: 0;
+                background-image: url("切片4：4/原图1—切割/");
+                box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1)
+            }
+
+            25% {
+                opacity: 0.25;
+                background-image: url("images/原图1切割ing.png");
+                box-shadow: 0 1px 2px rgba(18, 190, 84, 0.76)
+            }
+
+            50% {
+                opacity: 0.5;
+                background-image: url("images/原图1切割ing.png");
+                box-shadow: 0 1px 2px rgba(18, 190, 84, 0.76)
+            }
+
+            100% {
+                opacity: 1;
+                background-image: url("images/原图1切割ing.png");
+                box-shadow: 0 1px 2px rgba(18, 190, 84, 0.76)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 遮罩层 -->
+    <div class="total-cover">
+        <div class="message-box">
+            <!--  -->
+            <h1 class="title"> <!--测试标题--></h1>
+            <p class="words">
+                <!--测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字测试段落文字-->
+            </p>
+            <button class="cover-confirm">确定</button>
+        </div>
+    </div>
+    <!-- 左边导航区域 -->
+    <div class="nav-left">
+        <div class="nav-logo-top">
+            <img src="./images/logo.jpg" alt="" class="logo">
+            <p class="name">裂纹识别</p>
+        </div>
+        <ul class="nav-list">
+
+            <li><a href="首页.html"><i class="iconfont icon-home"></i>首页</a></li>
+            <li><a href="./数据集.html"><i class="iconfont icon-file"></i>数据集</a></li>
+            <li><a href="./图像切割.html" class="current"><i class="iconfont icon-notification"></i>图像切割</a></li>
+            <li><a href="./裂纹检测.html"><i class="iconfont icon-history"></i>裂纹检测</a></li>
+            <li><a href="./裂纹分类.html"><i class="iconfont icon-setting"></i>裂纹分类</a></li>
+            <li><a href="./关于我们.html"><i class="iconfont icon-favorite-filling"></i>关于我们</a></li>
+
+
+
+        </ul>
+        <div class="nav-bottom">
+            <img src="./images/logo.jpg" alt="">
+            <span class="name">设置</span>
+            <span class="more1">
+                <i class="iconfont icon-arrow-up-filling" id="arrow"></i>
+                <ul class="address-list">
+                    <a href="login.html"><li>退出账户</li></a>
+                    <a href=""><li>刷新系统</li></a>
+                </ul>
+            </span>
+
+        </div>
+    </div>
+    <!-- 右边部分 -->
+    <div class="nav-right background-image_AI_01">
+        <div class="header">
+            <span>
+                <i class="iconfont icon-menu"></i>
+                <span> 首页 -> <span class="create">图像切割</span></span>
+            </span>
+        </div>
+        <div class="background-image_AI_01">
+            <h2 class="title"><i class="iconfont icon-notification"></i>图像切割过程</h2>
+
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(1)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="box"></div>
+                <!-- 修改 -->
+                <!-- 修改 -->
+                <table class="box_1">
+                    <tr>
+                        <td><img src="./切片4：4/原图1—切割/RgbImage161636_01.gif" alt="" class="cut_images"></td>
+                        <td><img src="./切片4：4/原图1—切割/RgbImage161636_02.gif" alt="" class="cut_images"></td>
+                        <td><img src="./切片4：4/原图1—切割/RgbImage161636_03.gif" alt="" class="cut_images"></td>
+                        <td><img src="./切片4：4/原图1—切割/RgbImage161636_04.gif" alt="" class="cut_images"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./切片4：4/原图1—切割/RgbImage161636_05.gif" alt="" class="cut_images"></td>
+                        <td><img src="./切片4：4/原图1—切割/RgbImage161636_06.gif" alt="" class="cut_images"></td>
+                        <td><img src="./切片4：4/原图1—切割/RgbImage161636_07.gif" alt="" class="cut_images"></td>
+                        <td><img src="./切片4：4/原图1—切割/RgbImage161636_08.gif" alt="" class="cut_images"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./切片4：4/原图1—切割/RgbImage161636_09.gif" alt="" class="cut_images"></td>
+                        <td><img src="./切片4：4/原图1—切割/RgbImage161636_10.gif" alt="" class="cut_images"></td>
+                        <td><img src="./切片4：4/原图1—切割/RgbImage161636_11.gif" alt="" class="cut_images"></td>
+                        <td><img src="./切片4：4/原图1—切割/RgbImage161636_12.gif" alt="" class="cut_images"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./切片4：4/原图1—切割/RgbImage161636_13.gif" alt="" class="cut_images"></td>
+                        <td><img src="./切片4：4/原图1—切割/RgbImage161636_14.gif" alt="" class="cut_images"></td>
+                        <td><img src="./切片4：4/原图1—切割/RgbImage161636_15.gif" alt="" class="cut_images"></td>
+                        <td><img src="./切片4：4/原图1—切割/RgbImage161636_16.gif" alt="" class="cut_images"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="photo_1_div">
+                <img src="原始图片/RgbImage161636.bmp" class="photo_1_img" alt="">
+
+            </div>
+            <div class="photo_1_span">
+                <a href="#"><span style="font: size 30px;px;cursor:pointer" onclick="openNav()">&#9776; 开始切割（please
+                        click）</span></a>
+            </div>
+
+            <div class="info"></div>
+        </div>
+
+    </div>
+</body>
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+    }
+
+</script>
+<script src="./js/general.js"></script>
+<script src="./js/notification.js"></script>
+
+</html>
