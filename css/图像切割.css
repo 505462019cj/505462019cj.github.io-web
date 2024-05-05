@@ -1,0 +1,20 @@
+.images_h3 {
+
+    margin: 10px 160px;
+
+}
+
+.images_set {
+
+    margin: 0px 300px;
+
+
+}
+
+.images_size {
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+
+}
