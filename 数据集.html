@@ -3,130 +3,54 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./lib/font_4083442_zxyrbwbz4q/iconfont.css">
-    <link rel="stylesheet" href="./css/creatExamination.css">
-    <link rel="stylesheet" href="./css/general.css">
-    <link rel="stylesheet" href="./css/数据集.css">
+    <title>超链接样式示例</title>
+    <style>
+        /* 基本链接样式 */
+        a {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            color:cadetblue;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            display: block;
+            /* 每个链接占一行 */
+            transition: background-color 0.3s ease;
+            margin-bottom: 8px;
+            /* 添加底部边距 */
+        }
+
+        /* 鼠标悬停时的样式 */
+        a:hover {
+            background-color:aquamarine;
+            text-decoration: underline;
+        }
+
+        /* 已访问链接的样式 */
+        a:visited {
+            color: #551A8B;
+            text-decoration: underline;
+        }
+
+        /* 链接容器样式 */
+        .link-container {
+            padding: 16px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="whole">
-        <!-- 左边导航区域 -->
-        <div class="nav-left">
-            <div class="nav-logo-top">
-                <img src="./images/logo.jpg" alt="" class="logo">
-                <p class="name">裂纹识别</p>
-            </div>
-            <ul class="nav-list">
 
-                <li><a href="首页.html"><i class="iconfont icon-home"></i>首页</a></li>
-                <li><a href="./数据集.html" class="current"><i class="iconfont icon-file"></i>数据集</a></li>
-                <li><a href="./图像切割.html"><i class="iconfont icon-notification"></i>图像切割</a></li>
-                <li><a href="./裂纹检测.html"><i class="iconfont icon-history"></i>裂纹检测</a></li>
-                <li><a href="./裂纹分类.html"><i class="iconfont icon-setting"></i>裂纹分类</a></li>
-                <li><a href="./关于我们.html"><i class="iconfont icon-favorite-filling"></i>关于我们</a></li>
-
-
-
-            </ul>
-            <div class="nav-bottom">
-                <img src="./images/logo.jpg" alt="">
-                <span class="name">设置</span>
-                <span class="more1">
-                    <i class="iconfont icon-arrow-up-filling" id="arrow"></i>
-                    <ul class="address-list">
-                        <a href="login.html"><li>退出账户</li></a>
-                        <a href=""><li>刷新系统</li></a>
-                    </ul>
-                </span>
-
-            </div>
-        </div>
-        <!-- 右边部分 -->
-        <div class="nav-right">
-            <div class="header">
-                <span>
-                    <i class="iconfont icon-menu"></i>
-                    <span> 首页 -> <span class="create">数据集</span></span>
-                    <p></p>
-                </span>
-            </div>
-            <h2 class="title"><i class="iconfont icon-file"></i>数据集</h2>
-            <div class="sample_set">
-                <div class="test_image_container">
-                    <div class="sample_set_h3">
-                        <h3 class="sample_set">测试样本</h3>
-                    </div>
-                    <div class="sample_set_box2_j">
-                        <table class="test_table">
-                            <tr>
-                                <td>
-                                    <img src="./原始图片/RgbImage161636.bmp" alt="" class="test_image">
-                                    <img src="./原始图片/RgbImage162253.bmp" alt="" class="test_image">
-                                    <div class="tset_image_a">
-                                        <a href="./原始图片/">点击查看更多</a>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="j_sample_box">
-                    <div class="sample_set_h3">
-                        <h3 class="sample_set">训练样本</h3>
-                    </div>
-                    <div class="sample_set_container1">
-                        <div class="sample_set_box1">
-                            <p class="sample_set">切割后有裂纹</p>
-                            <table class="test_table2">
-                                <tr>
-                                    <td>
-                                        <img src="./数据集/ceshi/T/100_slice_2_0.jpg" alt="" class="training_image">
-                                        <img src="./数据集/ceshi/T/100_slice_2_1.jpg" alt="" class="training_image">
-                                        <img src="./数据集/ceshi/T/100_split_0_2.jpg" alt="" class="training_image">
-                                        <img src="./数据集/ceshi/T/100_split_2_3.jpg" alt="" class="training_image">
-
-                                        <div class="tset_image_a">
-                                            <a href="./数据集/ceshi/T/">点击查看更多</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-
-                        <div class="sample_set_box2">
-                            <p class="sample_set">切割后无裂纹</p>
-                            <table class="test_table2">
-                                <tr>
-                                    <td>
-                                        <img src="./数据集/ceshi/F/10_slice_0_0.jpg" alt="" class="training_image">
-                                        <img src="./数据集/ceshi/F/10_slice_0_1.jpg" alt="" class="training_image">
-                                        <img src="./数据集/ceshi/F/10_slice_0_2.jpg" alt="" class="training_image">
-                                        <img src="./数据集/ceshi/F/10_slice_0_3.jpg" alt="" class="training_image">
-
-                                        <div class="tset_image_a">
-                                            <a href="./数据集/ceshi/F/">点击查看更多</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-        </div>
+    <div class="link-container">
+        <a href="original_images/RgbImage161636.bmp">eg.测试样本01</a>
+        <a href="original_images/RgbImage162253.bmp">eg.测试样本02</a>
+        <a href="original_images/RgbImage165304.bmp">eg.测试样本03</a>
+        <a href="original_images/RgbImage165312.bmp">eg.测试样本04</a>
+        <a href="original_images/RgbImage165635.bmp">eg.测试样本05</a>
+        <!-- 更多超链接 -->
     </div>
+
 </body>
-<script src="./js/general.js"></script>
-<script src="./js/creatExamination.js"></script>
 
 </html>
