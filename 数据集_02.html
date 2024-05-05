@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接样式示例</title>
+    <style>
+        /* 基本链接样式 */
+        a {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            color:cadetblue;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            display: block;
+            /* 每个链接占一行 */
+            transition: background-color 0.3s ease;
+            margin-bottom: 8px;
+            /* 添加底部边距 */
+        }
+
+        /* 鼠标悬停时的样式 */
+        a:hover {
+            background-color:aquamarine;
+            text-decoration: underline;
+        }
+
+        /* 已访问链接的样式 */
+        a:visited {
+            color: #551A8B;
+            text-decoration: underline;
+        }
+
+        /* 链接容器样式 */
+        .link-container {
+            padding: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="link-container">
+        <a href="original_images/RgbImage161636.bmp">eg.测试样本01</a>
+        <a href="original_images/RgbImage162253.bmp">eg.测试样本02</a>
+        <a href="original_images/RgbImage165304.bmp">eg.测试样本03</a>
+        <a href="original_images/RgbImage165312.bmp">eg.测试样本04</a>
+        <a href="original_images/RgbImage165635.bmp">eg.测试样本05</a>
+        <!-- 更多超链接 -->
+    </div>
+
+</body>
+
+</html>
