@@ -14,114 +14,116 @@
 </head>
 
 <body>
-    <!-- 左边导航区域 -->
-    <div class="nav-left">
-        <div class="nav-logo-top">
-            <img src="./images/logo.jpg" alt="">
-            <p class="name">裂纹识别</p>
-        </div>
-        <ul class="nav-list">
-
-            <li><a href="首页.html"><i class="iconfont icon-home"></i>首页</a></li>
-            <li><a href="./数据集.html" class="current"><i class="iconfont icon-file"></i>数据集</a></li>
-            <li><a href="./图像切割.html"><i class="iconfont icon-notification"></i>图像切割</a></li>
-            <li><a href="./裂纹检测.html"><i class="iconfont icon-history"></i>裂纹检测</a></li>
-            <li><a href="./裂纹分类.html"><i class="iconfont icon-setting"></i>裂纹分类</a></li>
-            <li><a href="./关于我们.html"><i class="iconfont icon-favorite-filling"></i>关于我们</a></li>
-
-
-
-        </ul>
-        <div class="nav-bottom">
-            <img src="./images/logo.jpg" alt="">
-            <span class="name">设置</span>
-            <span class="more1">
-                <i class="iconfont icon-arrow-up-filling" id="arrow"></i>
-                <ul class="address-list">
-                    <li>退出账户</li>
-                    <li>关闭系统</li>
-                </ul>
-            </span>
-
-        </div>
-    </div>
-    <!-- 右边部分 -->
-    <div class="nav-right">
-        <div class="header">
-            <span>
-                <i class="iconfont icon-menu"></i>
-                <span> 首页 -> <span class="create">数据集</span></span>
-                <p></p>
-            </span>
-        </div>
-        <h2 class="title"><i class="iconfont icon-file"></i>数据集</h2>
-        <div class="sample_set">
-            <div class="test_image_container">
-                <div class="sample_set_h3">
-                    <h3 class="sample_set">测试样本</h3>
-                </div>
-                <div class="sample_set_box2_j">
-                    <table class="test_table">
-                        <tr>
-                            <td>
-                                <img src="./原始图片/RgbImage161636.bmp" alt="" class="test_image">
-                                <img src="./原始图片/RgbImage162253.bmp" alt="" class="test_image">
-                                <div class="tset_image_a">
-                                    <a href="数据集_02.html">点击查看更多</a>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+    <div class="whole">
+        <!-- 左边导航区域 -->
+        <div class="nav-left">
+            <div class="nav-logo-top">
+                <img src="./images/logo.jpg" alt="" class="logo">
+                <p class="name">裂纹识别</p>
             </div>
+            <ul class="nav-list">
 
-            <div class="j_sample_box">
-                <div class="sample_set_h3">
-                    <h3 class="sample_set">训练样本</h3>
-                </div>
-                <div class="sample_set_container1">
-                    <div class="sample_set_box1">
-                        <p class="sample_set">切割后有裂纹</p>
-                        <table class="test_table2">
-                            <tr>
-                                <td>
-                                    <img src="./数据集/ceshi/T/100_slice_2_0.jpg" alt="" class="training_image">
-                                    <img src="./数据集/ceshi/T/100_slice_2_1.jpg" alt="" class="training_image">
-                                    <img src="./数据集/ceshi/T/100_split_0_2.jpg" alt="" class="training_image">
-                                    <img src="./数据集/ceshi/T/100_split_2_3.jpg" alt="" class="training_image">
+                <li><a href="首页.html"><i class="iconfont icon-home"></i>首页</a></li>
+                <li><a href="./数据集.html" class="current"><i class="iconfont icon-file"></i>数据集</a></li>
+                <li><a href="./图像切割.html"><i class="iconfont icon-notification"></i>图像切割</a></li>
+                <li><a href="./裂纹检测.html"><i class="iconfont icon-history"></i>裂纹检测</a></li>
+                <li><a href="./裂纹分类.html"><i class="iconfont icon-setting"></i>裂纹分类</a></li>
+                <li><a href="./关于我们.html"><i class="iconfont icon-favorite-filling"></i>关于我们</a></li>
 
-                                    <div class="tset_image_a">
-                                        <a href="T.html">点击查看更多</a>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
+
+
+            </ul>
+            <div class="nav-bottom">
+                <img src="./images/logo.jpg" alt="">
+                <span class="name">设置</span>
+                <span class="more1">
+                    <i class="iconfont icon-arrow-up-filling" id="arrow"></i>
+                    <ul class="address-list">
+                        <a href="login.html"><li>退出账户</li></a>
+                        <a href=""><li>刷新系统</li></a>
+                    </ul>
+                </span>
+
+            </div>
+        </div>
+        <!-- 右边部分 -->
+        <div class="nav-right">
+            <div class="header">
+                <span>
+                    <i class="iconfont icon-menu"></i>
+                    <span> 首页 -> <span class="create">数据集</span></span>
+                    <p></p>
+                </span>
+            </div>
+            <h2 class="title"><i class="iconfont icon-file"></i>数据集</h2>
+            <div class="sample_set">
+                <div class="test_image_container">
+                    <div class="sample_set_h3">
+                        <h3 class="sample_set">测试样本</h3>
                     </div>
-
-                    <div class="sample_set_box2">
-                        <p class="sample_set">切割后无裂纹</p>
-                        <table class="test_table2">
+                    <div class="sample_set_box2_j">
+                        <table class="test_table">
                             <tr>
                                 <td>
-                                    <img src="./数据集/ceshi/F/10_slice_0_0.jpg" alt="" class="training_image">
-                                    <img src="./数据集/ceshi/F/10_slice_0_1.jpg" alt="" class="training_image">
-                                    <img src="./数据集/ceshi/F/10_slice_0_2.jpg" alt="" class="training_image">
-                                    <img src="./数据集/ceshi/F/10_slice_0_3.jpg" alt="" class="training_image">
-
+                                    <img src="./原始图片/RgbImage161636.bmp" alt="" class="test_image">
+                                    <img src="./原始图片/RgbImage162253.bmp" alt="" class="test_image">
                                     <div class="tset_image_a">
-                                        <a href="F.html">点击查看更多</a>
+                                        <a href="数据集_02.html">点击查看更多</a>
                                     </div>
                                 </td>
                             </tr>
                         </table>
                     </div>
                 </div>
+
+                <div class="j_sample_box">
+                    <div class="sample_set_h3">
+                        <h3 class="sample_set">训练样本</h3>
+                    </div>
+                    <div class="sample_set_container1">
+                        <div class="sample_set_box1">
+                            <p class="sample_set">切割后有裂纹</p>
+                            <table class="test_table2">
+                                <tr>
+                                    <td>
+                                        <img src="./数据集/ceshi/T/100_slice_2_0.jpg" alt="" class="training_image">
+                                        <img src="./数据集/ceshi/T/100_slice_2_1.jpg" alt="" class="training_image">
+                                        <img src="./数据集/ceshi/T/100_split_0_2.jpg" alt="" class="training_image">
+                                        <img src="./数据集/ceshi/T/100_split_2_3.jpg" alt="" class="training_image">
+
+                                        <div class="tset_image_a">
+                                            <a href="T.html">点击查看更多</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="sample_set_box2">
+                            <p class="sample_set">切割后无裂纹</p>
+                            <table class="test_table2">
+                                <tr>
+                                    <td>
+                                        <img src="./数据集/ceshi/F/10_slice_0_0.jpg" alt="" class="training_image">
+                                        <img src="./数据集/ceshi/F/10_slice_0_1.jpg" alt="" class="training_image">
+                                        <img src="./数据集/ceshi/F/10_slice_0_2.jpg" alt="" class="training_image">
+                                        <img src="./数据集/ceshi/F/10_slice_0_3.jpg" alt="" class="training_image">
+
+                                        <div class="tset_image_a">
+                                            <a href="F.html">点击查看更多</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
 
 
         </div>
-
-
     </div>
 </body>
 <script src="./js/general.js"></script>
